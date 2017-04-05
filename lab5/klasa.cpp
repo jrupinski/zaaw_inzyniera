@@ -71,14 +71,14 @@ void klasa(student a[])
         }
         else if (wyjscie =="NIE")
         {
-	        int numerS;
-	        int numerP;
-	        cout<<"Podaj numer studenta: "; //Numer studenta odpowiada indeksowi tablicy struktur + 1//
-	        cin>>numerS;
-	        cout<<"Podaj numer przedmiotu: ";
-	        cin>>numerP;
-	        cout<<"Student: "<<a[numerS-1].imie<<""<<endl;
-	        cout<<"Ocena z przedmiotu "<<a[numerS-1].b[numerP-1].nazwa<<": "<<a[numerS-1].b[numerP-1].ocena<<""<<endl;
+            int numerS;
+            int numerP;
+            cout<<"Podaj numer studenta: "; //Numer studenta odpowiada indeksowi tablicy struktur + 1//
+            cin>>numerS;
+            cout<<"Podaj numer przedmiotu: ";
+            cin>>numerP;
+            cout<<"Student: "<<a[numerS-1].imie<<""<<endl;
+            cout<<"Ocena z przedmiotu "<<a[numerS-1].b[numerP-1].nazwa<<": "<<a[numerS-1].b[numerP-1].ocena<<""<<endl;
         }
         else
         {
@@ -111,6 +111,7 @@ void sortuj(student * a)
 {
    sort(a,a+5,compare);
 }
+
 void wyswietl(student a[])
 {
     for(int i=0;i<5;++i)
